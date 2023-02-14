@@ -41,9 +41,22 @@ function GeoLocation (){
                 </div>
 
                 <div className='pt-9'>
-                    <p>{weatherData.main.temp}</p>
-                    <p>{weatherData.main.temp_min}</p>
-                    <p>{weatherData.main.temp_max}</p>
+                    <div className='flex flex-col items-center'>
+                        <div className='flex'>
+                            <p>Current Temp: </p>
+                            <p>{weatherData.main.temp}</p>
+                        </div>
+
+                        <div className='flex'>
+                            <p>temp_min: </p>
+                            <p>{weatherData.main.temp_min}</p>
+                        </div>
+
+                        <div className='flex'>
+                            <p>temp_max: </p>
+                            <p>{weatherData.main.temp_max}</p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
